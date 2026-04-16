@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="video-container">
+        <video id="video-player" class="landscape" width="600" controls>
+            <source src="song.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="controls">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="forward()">Forward 10s</button>
+            <button onclick="backward()">Backward 10s</button>
+            <button onclick="nextVideo()">Next Video</button>
+            <button onclick="previousVideo()">Previous Video</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
